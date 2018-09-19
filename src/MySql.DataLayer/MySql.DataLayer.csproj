@@ -66,10 +66,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\EntityConfig\Table\ColumnNameAttribute.cs" />
+    <Compile Include="Attributes\EntityConfig\Table\PKAttribute.cs" />
+    <Compile Include="Attributes\EntityConfig\Table\TableNameAttribute.cs" />
+    <Compile Include="Attributes\StoredProcedureConfig\StoredProcedure\StoredProcedureNameAttribute.cs" />
+    <Compile Include="Attributes\ViewConfig\View\ViewNameAttribute.cs" />
+    <Compile Include="ColumnTable.cs" />
+    <Compile Include="ConditionSearch.cs" />
+    <Compile Include="Connection\IMySqlConnectionFactory.cs" />
+    <Compile Include="Connection\MySqlConnectionFactory.cs" />
+    <Compile Include="DataEntity.cs" />
+    <Compile Include="DataStoredProcedure.cs" />
+    <Compile Include="DataView.cs" />
+    <Compile Include="IDataEntity.cs" />
+    <Compile Include="IDataStoredProcedure.cs" />
+    <Compile Include="IDataView.cs" />
+    <Compile Include="Mapper\Map.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryParameter.cs" />
+    <Compile Include="Repository\BaseMySqlRepository.cs" />
+    <Compile Include="Repository\IMySqlDataRepository.cs" />
+    <Compile Include="Utils\Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
